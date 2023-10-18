@@ -1,0 +1,154 @@
+ERROR - 2023-10-10 13:53:59 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'blog', 3306, '', 0)
+#1 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(54): CodeIgniter\Database\BaseConnection->query('SELECT MAX(id) ...')
+#4 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauric...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(54): CodeIgniter\Database\BaseConnection->query('SELECT MAX(id) ...')
+#3 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#4 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#5 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauric...')
+#8 {main}
+CRITICAL - 2023-10-10 13:53:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\PostController.php(54): CodeIgniter\Database\BaseConnection->query('SELECT MAX(id) as ultimaCategoria FROM categories')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauricio Hernández\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-10 13:57:52 --> mysqli_sql_exception: Unknown column 'c.catergory' in 'field list' in C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.title ...', 0)
+#1 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.title ...')
+#2 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.title ...')
+#3 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(57): CodeIgniter\Database\BaseConnection->query('SELECT p.title ...', Array)
+#4 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauric...')
+#9 {main}
+CRITICAL - 2023-10-10 13:57:52 --> Unknown column 'c.catergory' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(57): CodeIgniter\Database\BaseConnection->query('SELECT p.title AS \'Nombre del Post\', CONCAT(u.name, \' \', u.lastname) AS \'Nombre Completo del Autor\', c.catergory AS \'Categorias\'
+			FROM posts AS p
+			JOIN userinfo AS u ON u.id = p.autor
+			WHERE p.category = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauricio Hernández\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-10 13:58:03 --> mysqli_sql_exception: Unknown column 'c.category' in 'field list' in C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.title ...', 0)
+#1 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.title ...')
+#2 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.title ...')
+#3 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(57): CodeIgniter\Database\BaseConnection->query('SELECT p.title ...', Array)
+#4 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauric...')
+#9 {main}
+CRITICAL - 2023-10-10 13:58:03 --> Unknown column 'c.category' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(57): CodeIgniter\Database\BaseConnection->query('SELECT p.title AS \'Nombre del Post\', CONCAT(u.name, \' \', u.lastname) AS \'Nombre Completo del Autor\', c.category AS \'Categorias\'
+			FROM posts AS p
+			JOIN userinfo AS u ON u.id = p.autor
+			WHERE p.category = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauricio Hernández\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-10 13:58:20 --> Undefined array key "Categoria"
+in APPPATH\Views\posts\ejercicio02.php on line 24.
+ 1 APPPATH\Views\posts\ejercicio02.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Categoria"', 'C:\\Users\\Mauricio Hernández\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Views\\posts\\ejercicio02.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Mauricio Hernández\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Views\\posts\\ejercicio02.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio02', [], true)
+ 5 APPPATH\Controllers\PostController.php(66): view('posts/ejercicio02', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauricio Hernández\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-10 14:03:20 --> Undefined array key "phone"
+in APPPATH\Views\posts\ejercicio04.php on line 25.
+ 1 APPPATH\Views\posts\ejercicio04.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "phone"', 'C:\\Users\\Mauricio Hernández\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Views\\posts\\ejercicio04.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Mauricio Hernández\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Views\\posts\\ejercicio04.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 5 APPPATH\Controllers\PostController.php(80): view('posts/ejercicio04', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauricio Hernández\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-10 14:07:27 --> mysqli_sql_exception: Unknown column 'concui.name' in 'field list' in C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.id AS ...', 0)
+#1 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.id AS ...')
+#2 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.id AS ...')
+#3 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(96): CodeIgniter\Database\BaseConnection->query('SELECT p.id AS ...')
+#4 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio10()
+#5 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauric...')
+#9 {main}
+CRITICAL - 2023-10-10 14:07:27 --> Unknown column 'concui.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(96): CodeIgniter\Database\BaseConnection->query('SELECT p.id AS \'ID del Post\', p.title AS \'Título del Post\', u.username AS \'Nombre de Usuario\', concui.name AS \'Nombre\', ui.lastname AS \'Apellido\'
+        FROM posts AS p
+        JOIN users AS u ON p.autor = u.id
+        JOIN userinfo AS ui ON u.id = ui.id
+        WHERE ui.gender = \'M\' AND TIMESTAMPDIFF(YEAR, ui.birthday, NOW()) > 16
+        ORDER BY p.id ASC')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio10()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauricio Hernández\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-10 14:07:58 --> mysqli_sql_exception: Unknown column 'concui.name' in 'field list' in C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.id AS ...', 0)
+#1 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.id AS ...')
+#2 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.id AS ...')
+#3 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(96): CodeIgniter\Database\BaseConnection->query('SELECT p.id AS ...')
+#4 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio10()
+#5 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauric...')
+#9 {main}
+CRITICAL - 2023-10-10 14:07:58 --> Unknown column 'concui.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(96): CodeIgniter\Database\BaseConnection->query('SELECT p.id AS \'ID del Post\', p.title AS \'Título del Post\', u.username AS \'Nombre de Usuario\', concui.name AS \'Nombre\', ui.lastname AS \'Apellido\'
+        FROM posts AS p
+        JOIN users AS u ON p.autor = u.id
+        JOIN userinfo AS ui ON u.id = ui.id
+        WHERE ui.gender = \'M\' AND TIMESTAMPDIFF(YEAR, ui.birthday, NOW()) > 16
+        ORDER BY p.id ASC')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio10()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mauricio Hernández\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')

@@ -1,0 +1,92 @@
+ERROR - 2023-10-17 00:17:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`blog`.`products`, CONSTRAINT `fk_category_product` FOREIGN KEY (`category`) REFERENCES `categories` (`id`)) in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Database\Seeds\ProductSeeder.php(42): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-10-17 00:35:18 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 20.
+ 1 SYSTEMPATH\Router\RouteCollection.php(339): require()
+ 2 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-17 00:37:28 --> Class "App\Controllers\CI_Controller" not found
+in APPPATH\Controllers\Databasebackup.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Controllers\\Databasebackup.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Databasebackup')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Databasebackup')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Databasebackup', true)
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-17 00:38:13 --> syntax error, unexpected token ";", expecting "{"
+in APPPATH\Controllers\Databasebackup.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Controllers\\Databasebackup.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Databasebackup')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Databasebackup')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Databasebackup', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-17 00:38:30 --> Cannot call constructor
+in APPPATH\Controllers\Databasebackup.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Databasebackup->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-17 00:39:14 --> Undefined property: App\Controllers\Databasebackup::$dbutil
+in APPPATH\Controllers\Databasebackup.php on line 22.
+ 1 APPPATH\Controllers\Databasebackup.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Databasebackup::$dbutil', 'C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Controllers\\Databasebackup.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Databasebackup->full_backup()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databasebackup))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-17 00:42:21 --> Undefined property: App\Controllers\Databasebackup::$dbutil
+in APPPATH\Controllers\Databasebackup.php on line 21.
+ 1 APPPATH\Controllers\Databasebackup.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Databasebackup::$dbutil', 'C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Controllers\\Databasebackup.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Databasebackup->dummp()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databasebackup))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-17 00:43:36 --> Call to undefined method Config\Database::dbutil()
+in APPPATH\Controllers\Databasebackup.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Databasebackup->dummp()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databasebackup))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-17 02:17:37 --> Undefined property: App\Controllers\Databasebackup::$load
+in APPPATH\Controllers\Databasebackup.php on line 25.
+ 1 APPPATH\Controllers\Databasebackup.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Databasebackup::$load', 'C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Controllers\\Databasebackup.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Databasebackup->dummp()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databasebackup))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-17 14:03:26 --> File not found: "C:\s\Users\mcarl\OneDrive\Escritorio\volcado\respaldo.sql"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('C:\\s\\Users\\mcarl\\OneDrive\\Escritorio\\volcado\\respaldo.sql')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(102): CodeIgniter\Files\File->__construct('C:\\s\\Users\\mcarl\\OneDrive\\Escritorio\\volcado\\respaldo.sql', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('C:\\s\\Users\\mcarl\\OneDrive\\Escritorio\\volcado\\respaldo.sql')
+ 4 APPPATH\Controllers\PostController.php(121): CodeIgniter\HTTP\Response->download('respaldo.sql', null)
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->dump()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')

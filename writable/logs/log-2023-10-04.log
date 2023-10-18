@@ -1,0 +1,415 @@
+ERROR - 2023-10-04 14:10:33 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'useradmin'@'localhost' (using password: YES) in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'useradmin', Object(SensitiveParameterValue), 'blog', 3306, '', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\UserController.php(51): CodeIgniter\Database\BaseConnection->query('select * from u...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\UserController->usuarios3()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\UserController.php(51): CodeIgniter\Database\BaseConnection->query('select * from u...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\UserController->usuarios3()
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#8 {main}
+CRITICAL - 2023-10-04 14:10:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\UserController.php(51): CodeIgniter\Database\BaseConnection->query('select * from users as u join userinfo as ui on u.id = ui.id')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->usuarios3()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 14:11:21 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'blog' in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'blog', 3306, '', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\UserController.php(51): CodeIgniter\Database\BaseConnection->query('select * from u...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\UserController->usuarios3()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'blog' in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\UserController.php(51): CodeIgniter\Database\BaseConnection->query('select * from u...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\UserController->usuarios3()
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#8 {main}
+CRITICAL - 2023-10-04 14:11:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'blog'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\UserController.php(51): CodeIgniter\Database\BaseConnection->query('select * from users as u join userinfo as ui on u.id = ui.id')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->usuarios3()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-04 15:25:46 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\PostController.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 15:26:21 --> mysqli_sql_exception: FUNCTION blog.top does not exist in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('select top (c.c...', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select top (c.c...')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select top (c.c...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select top (c.c...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:26:21 --> FUNCTION blog.top does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select top (c.category), p.id, p.title, u.username, p.created_at from categories as c right join posts as p on p.category = c.id left join users as u on u.id = p.autor ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-04 15:26:39 --> Invalid file: "posts/ejercicio02,$data.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('posts/ejercicio02,$data.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio02,$data', [], true)
+ 3 APPPATH\Controllers\PostController.php(55): view('posts/ejercicio02,$data')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-04 15:27:02 --> Undefined array key "user"
+in APPPATH\Views\posts\ejercicio02.php on line 21.
+ 1 APPPATH\Views\posts\ejercicio02.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Views\\posts\\ejercicio02.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Views\\posts\\ejercicio02.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio02', [], true)
+ 5 APPPATH\Controllers\PostController.php(55): view('posts/ejercicio02', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-04 15:27:28 --> Undefined array key "users"
+in APPPATH\Views\posts\ejercicio02.php on line 21.
+ 1 APPPATH\Views\posts\ejercicio02.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Views\\posts\\ejercicio02.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Views\\posts\\ejercicio02.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio02', [], true)
+ 5 APPPATH\Controllers\PostController.php(55): view('posts/ejercicio02', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 15:33:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.id, p.title, u.username  from categories as c right join posts as p on p.c...' at line 1 in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('select (c.categ...', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select (c.categ...')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select (c.categ...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select (c.categ...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:33:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.id, p.title, u.username  from categories as c right join posts as p on p.c...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select (c.category)LIMIT 2, 1, p.id, p.title, u.username  from categories as c right join posts as p on p.category = c.id left join users as u on u.id = p.autor ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 15:35:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'right join posts as p on p.category = c.id 
+	left join users as u on u.id = p...' at line 2 in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('select c.catego...', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select c.catego...')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select c.catego...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select c.catego...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:35:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'right join posts as p on p.category = c.id 
+	left join users as u on u.id = p...' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select c.category, p.id, p.title, u.username  from categories as c limit 1 
+	right join posts as p on p.category = c.id 
+	left join users as u on u.id = p.autor ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 15:37:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'c.category limit 1' at line 4 in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('select c.catego...', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select c.catego...')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select c.catego...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select c.catego...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:37:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'c.category limit 1' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select c.category, p.id, p.title, u.username  from categories as c 
+	right join posts as p on p.category = c.id 
+	left join users as u on u.id = p.autor 
+	c.category limit 1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-04 15:43:19 --> syntax error, unexpected single-quoted string "ultimaCategoria", expecting "]"
+in APPPATH\Controllers\PostController.php on line 58.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 15:43:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'right join posts as p on p.category = c.id 
+	left join users as u on u.id = p...' at line 2 in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id, p....', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id, p....')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id, p....')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(52): CodeIgniter\Database\BaseConnection->query('select p.id, p....')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:43:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'right join posts as p on p.category = c.id 
+	left join users as u on u.id = p...' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(52): CodeIgniter\Database\BaseConnection->query('select p.id, p.title, u.username  
+	right join posts as p on p.category = c.id 
+	left join users as u on u.id = p.autor ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 15:44:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'right join posts as p on p.category = ultimaCategoria.id 
+	left join users as...' at line 2 in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id, p....', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id, p....')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id, p....')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(52): CodeIgniter\Database\BaseConnection->query('select p.id, p....')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:44:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'right join posts as p on p.category = ultimaCategoria.id 
+	left join users as...' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(52): CodeIgniter\Database\BaseConnection->query('select p.id, p.title, u.username  
+	right join posts as p on p.category = ultimaCategoria.id 
+	left join users as u on u.id = p.autor ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 15:45:22 --> mysqli_sql_exception: Undeclared variable: p in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('select category...', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select category...')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select category...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(52): CodeIgniter\Database\BaseConnection->query('select category...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:45:22 --> Undeclared variable: p
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(52): CodeIgniter\Database\BaseConnection->query('select category as "ultimaCategoria" from categories limit 1, p.id, p.title, u.username  
+	right join posts as p on p.category = ultimaCategoria.id 
+	left join users as u on u.id = p.autor ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 15:47:55 --> mysqli_sql_exception: Table 'c.category' doesn't exist in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('select c.catego...', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select c.catego...')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select c.catego...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select c.catego...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:47:55 --> Table 'c.category' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select c.category, p.id, p.title, u.username  from categories as c 
+	right join posts as p on p.category = c.id 
+	left join users as u on u.id = p.autor, 
+	c.category limit 1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-04 21:07:18 --> Cannot access offset of type CodeIgniter\Database\MySQLi\Result on string
+in APPPATH\Controllers\PostController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+CRITICAL - 2023-10-04 21:08:28 --> Cannot access offset of type CodeIgniter\Database\MySQLi\Result on string
+in APPPATH\Controllers\PostController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 21:11:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as "UC" 
+	c.category, p.id, p.title, u.username  from categories as c 
+	right...' at line 1 in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('select id from ...', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select id from ...')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select id from ...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select id from ...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 21:11:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as "UC" 
+	c.category, p.id, p.title, u.username  from categories as c 
+	right...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('select id from categories order by id desc limit 1 as "UC" 
+	c.category, p.id, p.title, u.username  from categories as c 
+	right join posts as p on p.category = c.id 
+	left join users as u on u.id = p.autor')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 21:13:05 --> mysqli_sql_exception: Unknown column 'u.first_name' in 'field list' in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.title ...', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.title ...')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.title ...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('SELECT p.title ...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 21:13:05 --> Unknown column 'u.first_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('SELECT p.title AS "Nombre del Post", CONCAT(u.first_name, " ", u.last_name) AS "Nombre Completo del Autor"
+		FROM categories AS c
+		RIGHT JOIN posts AS p ON p.category = c.id
+		LEFT JOIN users AS u ON u.id = p.author
+		WHERE c.id = (SELECT MAX(id) FROM categories)')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 21:13:20 --> mysqli_sql_exception: Unknown column 'u.name' in 'field list' in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.title ...', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.title ...')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.title ...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('SELECT p.title ...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 21:13:20 --> Unknown column 'u.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('SELECT p.title AS "Nombre del Post", CONCAT(u.name, " ", u.lastname) AS "Nombre Completo del Autor"
+		FROM categories AS c
+		RIGHT JOIN posts AS p ON p.category = c.id
+		LEFT JOIN users AS u ON u.id = p.author
+		WHERE c.id = (SELECT MAX(id) FROM categories)')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')
+ERROR - 2023-10-04 21:13:55 --> mysqli_sql_exception: Unknown column 'p.author' in 'on clause' in C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.title ...', 0)
+#1 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.title ...')
+#2 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.title ...')
+#3 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\app\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('SELECT p.title ...')
+#4 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\mcarl\OneDrive\Escritorio\TBD\blog02\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\...')
+#9 {main}
+CRITICAL - 2023-10-04 21:13:55 --> Unknown column 'p.author' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(50): CodeIgniter\Database\BaseConnection->query('SELECT p.title AS "Nombre del Post", CONCAT(u.name, " ", u.lastname) AS "Nombre Completo del Autor"
+		FROM categories AS c
+		RIGHT JOIN posts AS p ON p.category = c.id
+		LEFT JOIN userinfo AS u ON u.id = p.author
+		WHERE c.id = (SELECT MAX(id) FROM categories)')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\mcarl\\OneDrive\\Escritorio\\TBD\\blog02\\public\\index.php')

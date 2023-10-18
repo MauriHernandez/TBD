@@ -1,0 +1,28 @@
+ERROR - 2023-10-08 23:48:12 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\app\Database\Seeds\ProductSeeder.php(42): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#7 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-10-08 23:51:02 --> mysqli_sql_exception: Unknown column 'weight' in 'field list' in C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\app\Database\Seeds\ProductSeeder.php(42): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#7 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\Mauricio Hernández\OneDrive\Escritorio\TBD\blog02\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
